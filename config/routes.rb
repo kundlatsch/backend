@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "movies#index"
+  root "application#index"
 
   resources :movies, only: %i[index] do
     get :recommendations, on: :collection
